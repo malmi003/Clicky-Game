@@ -3,73 +3,73 @@
         "id": 1,
         "clicked": false,
         "name": "AndersonDanielLindner",
-        "image": "../public/images/AndersonDanielLindner.jpg"
+        "image": "./images/AndersonDanielLindner.jpg"
     },
     {
         "id": 2,
         "clicked": false,
         "name": "BarkerKaye",
-        "image": "../public/images/BarkerKaye.jpg"
+        "image": "./images/BarkerKaye.jpg"
     },
     {
         "id": 3,
         "clicked": false,
         "name": "CSLWellandLeindecker",
-        "image": "../public/images/CSLWellandLeindecker.jpg"
+        "image": "./images/CSLWellandLeindecker.jpg"
     },
     {
         "id": 4,
         "clicked": false,
         "name": "EvansSpiritChuckZentmeyer",
-        "image": "../public/images/EvansSpiritChuckZentmeyer.jpg"
+        "image": "./images/EvansSpiritChuckZentmeyer.jpg"
     },
     {
         "id": 5,
         "clicked": false,
         "name": "Jacqueline",
-        "image": "../public/images/Jacqueline.jpg"
+        "image": "./images/Jacqueline.jpg"
     },
     {
         "id": 6,
         "clicked": false,
         "name": "JohnGMunsonKevinSkow",
-        "image": "../public/images/JohnGMunsonKevinSkow.jpg"
+        "image": "./images/JohnGMunsonKevinSkow.jpg"
     },
     {
         "id": 7,
         "clicked": false,
         "name": "LeeASamHankinson",
-        "image": "../public/images/LeeASamHankinson.jpg"
+        "image": "./images/LeeASamHankinson.jpg"
     },
     {
         "id": 8,
         "clicked": false,
         "name": "LeonardMdrydock",
-        "image": "../public/images/LeonardMdrydock.jpg"
+        "image": "./images/LeonardMdrydock.jpg"
     },
     {
         "id": 9,
         "clicked": false,
         "name": "MichipicotenRB",
-        "image": "../public/images/MichipicotenRB.jpg"
+        "image": "./images/MichipicotenRB.jpg"
     },
     {
         "id": 10,
         "clicked": false,
         "name": "TecumsehDonLee",
-        "image": "../public/images/TecumsehDonLee.jpg"
+        "image": "./images/TecumsehDonLee.jpg"
     },
     {
         "id": 11,
         "clicked": false,
         "name": "Thompson",
-        "image": "../public/images/Thompson.jpg"
+        "image": "./images/Thompson.jpg"
     },
     {
         "id": 12,
         "clicked": false,
         "name": "WestcottMM",
-        "image": "../public/images/WestcottMM.jpg"
+        "image": "./images/WestcottMM.jpg"
     }
 
 ]

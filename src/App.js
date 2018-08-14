@@ -16,12 +16,12 @@ function shuffleCards(imageArray) {
   return imageArray;
 };
 
-class App extends React.Component {
+class App extends Component {
   state = {
     boats,
     score: 0,
     highScore: 0,
-    guessingStatus: "",
+    guessingStatus: "Select an image to begin the clicky game!",
     clicked: []
   };
 
@@ -31,14 +31,16 @@ class App extends React.Component {
   };
 
   handleIncrement = () => {
-    const currentScore = this.state.score++;
+    const currentScore = this.state.score + 1;
     this.setState({
       score: currentScore,
-      guessingStatus: ""
+      guessingStatus: "Correct!"
     });
-
     if (currentScore >= this.state.highScore) {
-      this.setState({ highScore: currentScore });
+      this.setState({ 
+        highScore: currentScore,
+        guessingStatus: "Correct!" 
+      });
     } else if (currentScore === 12) {
       this.setState({ guessingStatus: "You win!" })
     };
@@ -49,9 +51,10 @@ class App extends React.Component {
     this.setState({
       score: 0,
       highScore: this.state.highScore,
-      guessingStatus: "Honk, honk",
+      guessingStatus: "You already admired that ship, try again.",
       clicked: [],
     });
+    this.handleShuffle();
   };
 
   handleClick = id => {
@@ -63,32 +66,34 @@ class App extends React.Component {
     }
   };
 
-  render = () => (
-    <Wrapper>
-      <Header
-        score={this.state.score}
-        highScore={this.state.highScore}
-        guessingStatus={this.state.guessingStatus}
-      />
-      <Container>
-        <Row>
-          {this.state.boats.map(boat => {
-            <Column size="md-3 sm-6">
-              <ImageCard
-                key={boat.id}
-                handleClick={this.handleClick}
-                handleIncrement={this.handleIncrement}
-                handleReset={this.handleReset}
-                handleShuffle={this.handleShuffle}
-                id={boat.id}
-                image={boat.image}
-              />
-            </Column>
-          })}
-        </Row>
-      </Container>
-    </Wrapper>
-  );
-}
+  render() {
+    return (
+      <Wrapper>
+        <Header
+          score={this.state.score}
+          highScore={this.state.highScore}
+          guessingStatus={this.state.guessingStatus}
+        />
+        <Container>
+          <Row>
+            {this.state.boats.map(boat => (
+              <Column size="md-3 sm-6">
+                <ImageCard
+                  key={boat.id}
+                  handleClick={this.handleClick}
+                  handleIncrement={this.handleIncrement}
+                  handleReset={this.handleReset}
+                  handleShuffle={this.handleShuffle}
+                  id={boat.id}
+                  image={boat.image}
+                />
+              </Column>
+            ))}
+          </Row>
+        </Container>
+      </Wrapper>
+    )
+  };
+};
 
 export default App;
