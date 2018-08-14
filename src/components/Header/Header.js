@@ -11,7 +11,7 @@ const Header = props => (
                 <li>High Score: {props.highScore}</li>
             </ul>
         </nav>
-        <h1>Boats of the Great Lakes Clicky Game</h1>
+        <h1 className="title">Boats of the Great Lakes Clicky Game</h1>
         <h2>Click on an image to earn points, but don't click on any more than once!</h2>
     </header>
 );
