@@ -2,7 +2,7 @@
   "name": "reactclickygame",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://malmi003.github.io/Clicky-Game/",
+  "homepage": "http://malmi003.github.io/Ships-Clicky-Game/",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.2",
