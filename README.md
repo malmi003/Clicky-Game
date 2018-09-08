@@ -1,6 +1,6 @@
 # Great Lakes Ships Clicky Game
 
-This React app was built to test your memory with some of the big ships seen in the Great Lakes. 
+This React app was built to test your memory with some of the big ships seen in the Great Lakes.
 
 ## Rules:
 Click on an image to earn points, but don't click on any more than once!
